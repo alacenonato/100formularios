@@ -1,0 +1,184 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dddde3;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 16px;
+}
+
+/* =========================
+   CARTÃO DO FORMULÁRIO
+========================= */
+
+.contact-card {
+    width: 100%;
+    max-width: 520px;
+
+    background-color: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.contact-header {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.contact-header p {
+    font-size: 15px;
+    color: #64748b;
+}
+
+/* =========================
+   GRUPOS DE CAMPOS
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* =========================
+   INPUTS E TEXTAREA
+========================= */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    color: #1e293b;
+    background-color: #ffffff;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+/* =========================
+   FOCO NOS CAMPOS
+========================= */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* =========================
+   BOTÃO DE ENVIO
+========================= */
+
+button[type="submit"] {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #2563eb;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 480px) {
+
+    .contact-card {
+        padding: 24px 18px;
+    }
+
+    .contact-header h1 {
+        font-size: 24px;
+    }
+
+}
