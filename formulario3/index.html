@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Página de login para acessar sua conta."
+    >
+
+    <title>Login | Minha Conta</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <section class="login-card" aria-labelledby="login-title">
+
+            <header class="login-header">
+                <div class="logo" aria-hidden="true">M</div>
+
+                <h1 id="login-title">Bem-vindo de volta!</h1>
+
+                <p>Entre com seus dados para continuar.</p>
+            </header>
+
+            <form id="login-form">
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="voce@exemplo.com"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <div class="password-label">
+                        <label for="senha">Senha</label>
+
+                        <a href="recuperar-senha.html">
+                            Esqueceu a senha?
+                        </a>
+                    </div>
+
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="toggle-password"
+                            class="toggle-password"
+                            aria-controls="senha"
+                            aria-label="Mostrar senha"
+                            aria-pressed="false"
+                        >
+                            Mostrar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-option" for="lembrar">
+                        <input
+                            type="checkbox"
+                            id="lembrar"
+                            name="lembrar"
+                        >
+
+                        <span>Lembrar de mim</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="login-button">
+                    Entrar
+                </button>
+
+                <p
+                    id="form-message"
+                    class="form-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+            <footer class="login-footer">
+                <p>
+                    Ainda não tem uma conta?
+                    <a href="cadastro.html">Criar conta</a>
+                </p>
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

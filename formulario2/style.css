@@ -1,0 +1,250 @@
+
+/* ==========================
+   1. RESET E CONFIGURAÇÕES
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* ==========================
+   2. CONTAINER PRINCIPAL
+========================== */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ==========================
+   3. CARTÃO DO FORMULÁRIO
+========================== */
+
+.form-card {
+    width: 100%;
+    max-width: 850px;
+    padding: 35px;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+}
+
+/* ==========================
+   4. CABEÇALHO
+========================== */
+
+.form-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-header h1 {
+    margin-bottom: 8px;
+    color: #1d4ed8;
+    font-size: 30px;
+}
+
+.form-header p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* ==========================
+   5. SEÇÕES DO FORMULÁRIO
+========================== */
+
+fieldset {
+    min-width: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 25px;
+}
+
+legend {
+    padding: 0 10px;
+    color: #1d4ed8;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ==========================
+   6. GRID DE CAMPOS
+========================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* ==========================
+   7. CAMPOS DE ENTRADA
+========================== */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    min-height: 45px;
+    padding: 11px 12px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #1e293b;
+
+    font: inherit;
+    font-size: 14px;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+/* ==========================
+   8. FOCO E ACESSIBILIDADE
+========================== */
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ==========================
+   9. TERMOS
+========================== */
+
+.terms {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 5px 0 25px;
+}
+
+.terms input {
+    width: 17px;
+    height: 17px;
+    margin-top: 4px;
+    flex-shrink: 0;
+    accent-color: #2563eb;
+}
+
+.terms label {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* ==========================
+   10. BOTÕES
+========================== */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.form-actions button {
+    min-height: 45px;
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+
+.form-actions button:active {
+    transform: scale(0.98);
+}
+
+/* ==========================
+   11. RESPONSIVIDADE
+========================== */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 12px;
+    }
+
+    .form-card {
+        padding: 24px 16px;
+    }
+
+    .form-header h1 {
+        font-size: 25px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    fieldset {
+        padding: 18px 12px;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
