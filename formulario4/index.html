@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Pesquise vagas de emprego por cargo, localização e modalidade."
+    >
+
+    <title>Pesquisar Vagas de Emprego</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="search-card">
+
+            <header class="header">
+                <span class="subtitle">SUA PRÓXIMA OPORTUNIDADE</span>
+
+                <h1>Encontre seu próximo emprego</h1>
+
+                <p>
+                    Pesquise vagas e encontre uma oportunidade
+                    que combine com você.
+                </p>
+            </header>
+
+            <form class="search-form" action="#" method="get">
+
+                <div class="form-group">
+                    <label for="cargo">Cargo ou palavra-chave</label>
+
+                    <input
+                        type="search"
+                        id="cargo"
+                        name="cargo"
+                        placeholder="Ex.: Desenvolvedor Frontend"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade ou estado</label>
+
+                    <input
+                        type="text"
+                        id="cidade"
+                        name="cidade"
+                        placeholder="Ex.: Belo Horizonte, MG"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="modalidade">Modalidade de trabalho</label>
+
+                    <select id="modalidade" name="modalidade">
+                        <option value="">Todas as modalidades</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contrato">Tipo de contrato</label>
+
+                    <select id="contrato" name="contrato">
+                        <option value="">Todos os contratos</option>
+                        <option value="clt">CLT</option>
+                        <option value="pj">Pessoa Jurídica (PJ)</option>
+                        <option value="estagio">Estágio</option>
+                        <option value="temporario">Temporário</option>
+                        <option value="freelancer">Freelancer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="salario">Salário mínimo desejado</label>
+
+                    <select id="salario" name="salario">
+                        <option value="">Não especificado</option>
+                        <option value="2000">R$ 2.000</option>
+                        <option value="3000">R$ 3.000</option>
+                        <option value="5000">R$ 5.000</option>
+                        <option value="7000">R$ 7.000</option>
+                        <option value="10000">R$ 10.000 ou mais</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-search">
+                        Pesquisar vagas
+                    </button>
+
+                    <button type="reset" class="btn-reset">
+                        Limpar filtros
+                    </button>
+                </div>
+
+            </form>
+
+            <footer class="footer">
+                <p>Seu próximo passo profissional começa aqui.</p>
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
